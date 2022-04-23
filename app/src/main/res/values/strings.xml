@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ZivameShopping</string>
+    <string name="unable_to_process_request">Unable to process request</string>
+    <string name="no_items_available">No items available</string>
+    <string name="rs_amount">\u20B9%1$s</string>
+    <string name="gadgets">Gadgets</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="cart">Cart</string>
+    <string name="no_items_available_in_cart">No items available in cart</string>
+    <string name="amount">Amount</string>
+    <string name="price">Price</string>
+    <string name="checkout">Checkout</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="your_order_has_been_placed">Your order has been placed.</string>
+    <string name="continue_shopping">Continue shopping</string>
+    <string name="max_notifications">99+</string>
+</resources>

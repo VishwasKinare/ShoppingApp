@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/shoppingListFragment">
+
+    <fragment
+        android:id="@+id/shoppingListFragment"
+        android:name="com.zivame.shopping.presentation.fragments.ShoppingListFragment"
+        tools:layout="@layout/fragment_shopping_list"
+        android:label="ShoppingListFragment" >
+        <action
+            android:id="@+id/action_shoppingListFragment_to_cartFragment"
+            app:destination="@id/cartFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.zivame.shopping.presentation.fragments.CartFragment"
+        tools:layout="@layout/fragment_cart"
+        android:label="CartFragment" >
+        <action
+            android:id="@+id/action_cartFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.zivame.shopping.presentation.fragments.CheckoutFragment"
+        tools:layout="@layout/fragment_checkout"
+        android:label="CheckoutFragment" >
+        <action
+            android:id="@+id/action_checkoutFragment_to_shoppingListFragment"
+            app:destination="@id/shoppingListFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/cartFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>
